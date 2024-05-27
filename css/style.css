@@ -15,22 +15,29 @@ body {
 
 /* Estilos para el header */
 header {
-    background-color: #bf930d;
+    background: linear-gradient(45deg, rgba(0, 0, 0, 1), rgba(191, 147, 13, 1));
     padding: 20px;
     position: fixed;
     width: 100%;
     z-index: 1000;
+    height: 100px;
     top: 0;
     left: 0;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+header img {
+    height: 150px; /* Ajusta la altura de la imagen */
+    position: relative;
+    left: 20px;
+}
 
 .menu {
     list-style-type: none;
     padding: 0;
     margin: 0;
     text-align: center;
+    margin-top: -110px; /* Ajusta según sea necesario */
 }
 
 .menu-item {
@@ -43,10 +50,12 @@ header {
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s;
+    font-size: 20px;
 }
 
 .menu-item a:hover {
-    color: #000;
+    color: wheat;
+    text-shadow: 0px 0px 15px rgba(0, 0, 0, 1);
 }
 
 /* Estilos para el hero section */
@@ -57,6 +66,7 @@ header {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url('img/background.jpg');
     background-size: cover;
     background-position: center;
+    margin-top: 150px;
 }
 
 #hero h1 {
@@ -137,6 +147,7 @@ section.servicios ul li:hover {
     border-bottom: 1px solid #00aaff;
 }
 
+/* Media Queries para pantallas más grandes */
 @media (min-width: 768px) {
     section {
         width: 90%;
@@ -163,6 +174,7 @@ section.servicios ul li:hover {
     }
 }
 
+/* Media Queries para pantallas medianas y pequeñas */
 @media (max-width: 767px) {
     .menu-item {
         display: block;
@@ -179,6 +191,73 @@ section.servicios ul li:hover {
     .project {
         width: 100%;
         margin-bottom: 20px;
+    }
+
+    header {
+        height: auto;
+        padding: 10px;
+    }
+
+    header img {
+        height: 60px;
+        left: 10px;
+    }
+
+    .menu {
+        margin-top: 10px;
+        margin-left: 0;
+    }
+
+    #hero {
+        padding: 100px 20px;
+        margin-top: 60px;
+    }
+
+    section {
+        padding: 30px 10px;
+        margin-top: 40px;
+    }
+
+    section h1 {
+        font-size: 1.8em;
+    }
+
+    section p {
+        font-size: 1em;
+    }
+}
+
+/* Media Queries para pantallas muy pequeñas */
+@media (max-width: 480px) {
+    #hero h1 {
+        font-size: 2.5em;
+    }
+
+    #hero p {
+        font-size: 1em;
+    }
+
+    section h1 {
+        font-size: 2em;
+    }
+
+    section p {
+        font-size: 1em;
+    }
+
+    .cta {
+        font-size: 1em;
+        padding: 10px;
+    }
+
+    header img {
+        height: 50px;
+        left: 5px;
+    }
+
+    .menu-item {
+        display: block;
+        margin: 5px 0;
     }
 }
 
@@ -319,40 +398,15 @@ footer {
     padding: 10px;
     background-color: #0e1e25;
     margin-top: 35px;
-    width: auto;
+    width: 100%;
 }
 
 .footer-logo {
-    height: 250px; /* Ajusta la altura de la imagen */
+    height: 100px; /* Ajusta la altura de la imagen */
     width: auto; /* Mantén la proporción de la imagen */
 }
 
 footer p {
     margin: 0;
     color: wheat;
-}
-
-
-
-@media (max-width: 480px) {
-    #hero h1 {
-        font-size: 2.5em;
-    }
-
-    #hero p {
-        font-size: 1em;
-    }
-
-    section h1 {
-        font-size: 2em;
-    }
-
-    section p {
-        font-size: 1em;
-    }
-
-    .cta {
-        font-size: 1em;
-        padding: 10px;
-    }
 }
