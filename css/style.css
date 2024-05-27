@@ -319,6 +319,7 @@ footer {
     padding: 10px;
     background-color: #0e1e25;
     margin-top: 35px;
+    width: auto;
 }
 
 .footer-logo {
