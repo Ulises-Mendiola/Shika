@@ -313,13 +313,25 @@ section.contacto .map iframe {
 
 /* Estilos para el footer */
 footer {
-    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px;
     background-color: #0e1e25;
-    color: wheat;
-    padding: 20px;
-    text-align: center;
-    width: 97%;
+    margin-top: 35px;
 }
+
+.footer-logo {
+    height: 250px; /* Ajusta la altura de la imagen */
+    width: auto; /* Mantén la proporción de la imagen */
+}
+
+footer p {
+    margin: 0;
+    color: wheat;
+}
+
+
 
 @media (max-width: 480px) {
     #hero h1 {
@@ -343,53 +355,3 @@ footer {
         padding: 10px;
     }
 }
-
-
-/*
-### Estilos Generales ###
-
- `body`: Define la fuente, color de fondo, y márgenes del documento.
- `.container`: Establece ancho máximo y márgenes automáticos para centrar contenido.
-
-### Header ###
-
- `header`: Fondo dorado, fijo, y sombreado para la cabecera.
- `.menu`: Lista de navegación sin estilo y centrada.
- `.menu-item`: Estilo de elementos del menú en línea.
-
-### Hero Section ###
-
- `#hero`: Sección principal con imagen de fondo, gradiente, y estilos de texto.
- `#hero h1`: Tamaño y margen del título principal.
- `#hero p`: Tamaño y margen del párrafo.
- `.cta`: Botón de llamada a la acción con transiciones de color.
-
-### Secciones ###
-
- `section`: Estilos comunes para todas las secciones, con márgenes y bordes redondeados.
- `h1, h2, h3`: Colores de los títulos de secciones.
- `section h1`: Tamaño y margen del título de la sección.
-
-### Servicios ###
-
- `section.servicios`: Estilos específicos para la sección de servicios, fondo oscuro y texto centrado.
- `section.servicios ul li`: Estilos para lista de servicios ofrecidos.
-
-### Nosotros ###
-
- `section.nosotros`: Estilos para sección sobre nosotros, diseño flexible para miembros del equipo.
- `section.nosotros .team-member`: Estilos para cada miembro del equipo, con efecto al pasar el cursor.
-
-### Proyectos ###
-
- `section.proyectos`: Estilos para sección de proyectos destacados, similar a la sección nosotros.
-
-### Contacto ###
-
- `section.contacto`: Estilos para sección de contacto, diseño flexible para miembros del equipo y mapa incrustado.
-
-### Footer ###
-
- `footer`: Estilos para pie de página, fondo oscuro y texto centrado.
-
-*/
