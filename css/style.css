@@ -18,16 +18,16 @@ header {
     background: linear-gradient(45deg, rgba(0, 0, 0, 1), rgba(191, 147, 13, 1));
     padding: 20px;
     position: fixed;
-    width: 100%;
+    width: 220vh;
     z-index: 1000;
-    height: 100px;
+    height: 50px;
     top: 0;
     left: 0;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 header img {
-    height: 150px; /* Ajusta la altura de la imagen */
+    height: 80px; /* Ajusta la altura de la imagen */
     position: relative;
     left: 20px;
 }
@@ -37,7 +37,7 @@ header img {
     padding: 0;
     margin: 0;
     text-align: center;
-    margin-top: -110px; /* Ajusta según sea necesario */
+    margin-top: -60px; /* Ajusta según sea necesario */
 }
 
 .menu-item {
@@ -66,7 +66,7 @@ header img {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url('img/background.jpg');
     background-size: cover;
     background-position: center;
-    margin-top: 150px;
+    margin-top: 100px;
 }
 
 #hero h1 {
@@ -398,7 +398,7 @@ footer {
     padding: 10px;
     background-color: #0e1e25;
     margin-top: 35px;
-    width: 100%;
+    width: 220vh;
 }
 
 .footer-logo {
